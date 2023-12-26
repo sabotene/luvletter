@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+
+.top-boxes{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.head-box{
+    width: 150px;
+    height:50px;
+    transition: transform 0.1s;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0.1px solid white;
+    background: linear-gradient(
+        45deg,
+        pink,
+        lightblue,
+        #ef7272
+    );
+    background-size: 400% 400%;
+    animation: animate 7s ease infinite;
+    }
+   
+    @keyframes animated{
+        0%{
+         background-position: 0 50%;
+        }
+        50%{
+         background-position: 100% 50%;
+        }
+        0%{
+         background-position: 0 50%;
+        }
+     }
+
+     .cat1{
+    height: 100%;
+    margin-top: 11px;
+    margin-left: 1px;
+   
+}
+
+.cat2{
+    height: 100%;
+    margin-top: 6px;
+    margin-left: -1px;
+    
+}
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    margin-left: -6px;
+    color: white;
+
+}
+.text::first-letter{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.head-box:hover{
+    border: 2px solid white;
+    transform: scale(0.97);
+}
+
+.inside-box{
+    width: 45px;
+    height: 50px;
+   
+    
+   
+}
+
+.pfp{
+    height: 50px;
+    border-radius: 30px;
+}
+
+.pfp:hover{
+    height: 50px;
+    border-radius: 30px;
+    border: solid white;
+}
+
+.head-square1{
+    width: 50px;
+    height: 50px;
+    background-color: palevioletred;
+    transition: transform 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60%;
+  
+}
+.menu-icon{
+ height: 140%;
+}
+
+.head-square1:hover{
+    border:solid white;
+    transform: scale(0.99);
+}
+
+.main{
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background: linear-gradient(
+        -45deg,
+        pink,
+        purple,
+        lightblue,
+        lightyellow
+    );
+    background-size: 400% 400%;
+    animation: animate 20s ease infinite;
+}
+
+.gif{
+    transition: transform 2s;
+    cursor: pointer;
+}
+.gif:hover{
+    filter: drop-shadow(16px 10px  #d8086d);
+}
+@keyframes animate{
+   0%{
+    background-position: 0 50%;
+   }
+   50%{
+    background-position: 100% 50%;
+   }
+   0%{
+    background-position: 0 50%;
+   }
+}
+
+   
+.giff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.gif{
+    height: 90%;
+    position:absolute;
+    top:40px;
+    
+}
+
+.centers{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+button{
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+    border: 0.2px solid white;
+    cursor: pointer;
+    background: transparent;
+    background-size: 400% 400%;
+    animation: animate 20s ease infinite;
+}
+
+button:hover{
+    background-image:url(./kirby-smash.gif); 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-weight: bold;
+}

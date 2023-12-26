@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    color:beige;
+    
+}
+.title::first-letter{
+    font-size: 100px;
+    font-family:  'Carattere', cursive;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+        -45deg,
+        #f0bea0,
+        #f0db8f,
+        #afb9e5,
+        #ecc6cf
+    );
+    background-size: 400% 400%;
+    animation: animate 30s ease infinite;
+}
+.kirby{
+    height: 70px;
+}
+
+p{
+    width: 50%;
+    margin-top: 30px;
+}
